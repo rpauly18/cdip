@@ -97,7 +97,8 @@ def get_thredd(station, deploy=None, cache_only=False):
                                             dep=_parse_deploy(deploy)))
 
     nc = nc4.Dataset(url)
-    return CDIPbuoy(nc)
+    print("!!!!")
+    return nc
 
 
 def _cache_name(inval, deploy=None):
